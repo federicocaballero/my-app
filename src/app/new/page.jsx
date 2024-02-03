@@ -1,12 +1,12 @@
 'use client'
-import ProductForm from '@/components/ProductForm'
+import ProductCard from '@/components/ProductCard'
 import React, { Component } from 'react'
 
 export default class NewPage extends Component {
   render() {
     return (
       <div>
-            <ProductForm/>
+            <ProductCard/>
       </div>
     )
   }

@@ -1,5 +1,5 @@
 'use client'
-import ProductForm from '@/components/ProductForm';
+import ProductCard from '@/components/ProductCard';
 import React from 'react';
 
 import { useEffect, useState } from 'react';
@@ -22,16 +22,9 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Resultados de la Consulta</h1>
-      <ul>
-        {productos.map(producto => (
-          <li key={producto.id}>
-            ID: {producto.id}, Nombre: {producto.nombre}, Precio: {producto.precio}
-          </li>
-        ))}
-      </ul>
-    </div>
+    productos.map((producto) => {
+     return <ProductCard datosProducto = {producto}/>
+    })
   );
 }
 
