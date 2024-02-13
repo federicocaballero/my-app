@@ -23,7 +23,11 @@ const HomePage = () => {
 
   return (
     productos.map((producto) => {
-     return <ProductCard datosProducto = {producto}/>
+      console.log(producto.estado)
+      if (producto.estado == 1 ){
+        return <ProductCard datosProducto = {producto}/>
+     }
+     
     })
   );
 }
