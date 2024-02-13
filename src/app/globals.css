@@ -3,8 +3,15 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
+  
+  background-color: rgb(216, 216, 216);
   color: white;
+}
+
+.navbar{
+  background-color: white;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
 }
 .limitar-lineas {
   max-height: 3em; /* Ajusta esta altura según la altura de tres líneas de texto */
