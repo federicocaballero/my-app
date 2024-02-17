@@ -3,30 +3,47 @@
 @tailwind utilities;
 
 body {
-  
-  background-color: rgb(216, 216, 216);
+  background-color: #ebe9b2;
   color: white;
 }
 
+/* NAVBAR */
 .navbar{
   background-color: white;
   border-bottom-left-radius: 8%;
   border-bottom-right-radius: 8%;
 }
+/* NAVBAR */
+
+/* CARD COMPONENT */
+.container-principal{
+  background-color: #0e3225;
+  min-height: 190px;
+}
+.container-card-img{
+  background-color: #0e3225;
+  height: 100%;
+}
+
+.btn-style{
+  padding: 4px 8px 4px 8px;
+  width: fit-content;
+  margin-bottom: 5px;
+}
+.card-img{
+  margin: auto;
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5%;
+  border: 2px white solid;
+}
+
+/* estilos de las lineas de puntos del componente */
 .limitar-lineas {
   max-height: 3em; /* Ajusta esta altura según la altura de tres líneas de texto */
   overflow: hidden;
   position: relative;
 }
 
-.container-card-img{
-  background-color: black;
-  height: 100%;
-}
-.card-img{
-  margin: auto;
-  width: 300px;
-  height: 150px;
-  object-fit: fill;
-  border-radius: 25%;
-}
+/* CARD COMPONENT */

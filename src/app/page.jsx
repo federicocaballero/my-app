@@ -14,7 +14,7 @@ const HomePage = () => {
         const datos = await respuesta.json();
         setProductos(datos.data);
       } catch (error) {
-        console.error('Error al obtener los datossss:', error);
+        console.error('Error al obtener los datos:', error);
       }
     }
 
